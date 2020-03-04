@@ -1,0 +1,57 @@
+// Get all tasks
+{
+  tasks {
+    id
+    description
+  }
+}
+
+//Get a task
+{
+  tasks(id: "idkdkssk") {
+    id
+    description
+  }
+}
+
+// Add task
+
+mutation {
+  addTask(description: "descripcion de la tarea")
+  {
+    id
+    description
+  }
+}
+
+// Add users
+
+mutation {
+  addUser(name: "Juan Navas", email: "naj@jsjs.com")
+  {
+    id
+    name
+    email
+  }
+}
+
+// Get All users 
+{
+  users {
+    id
+    name
+    email
+  }
+}
+
+// addUserToTask
+
+mutation {
+  addUserToTask(id: "-M1Y3K7Xe4Cxc_-IlHDB", userid: "-M1Y6CKDX1pM5Te1Dsm5")
+  {
+    id
+    description
+    users
+  }
+}
+
